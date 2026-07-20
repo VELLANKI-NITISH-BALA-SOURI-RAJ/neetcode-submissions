@@ -3,8 +3,6 @@ class Solution:
         f={}
         for i in nums:
             f[i]=f.get(i,0)+1
-        g=sorted(f.keys(),key=lambda x: f[x], reverse=True)[:k]
-        return g
-
-    
+        w=sorted(f.keys(),key=lambda x:f[x], reverse=True)[:k]
+        return w
         
